@@ -18,7 +18,7 @@ type User {
     email: String!
     password: String!
     bookCount:
-    savedBooks:
+    savedBooks: [bookSchema]
 }
 type Book {
     bookId: String!
