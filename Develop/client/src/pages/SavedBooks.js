@@ -39,7 +39,7 @@ const SavedBooks = () => {
         }
 
         const user = await response.json();
-        setUserData(user);
+        // setUserData(user);
       } catch (err) {
         console.error(err);
       }
@@ -66,7 +66,7 @@ const SavedBooks = () => {
       }
 
       const updatedUser = await response.json();
-      setUserData(updatedUser);
+      // setUserData(updatedUser);
       // upon success, remove book's id from localStorage
       removeBookId(bookId);
     } catch (err) {
